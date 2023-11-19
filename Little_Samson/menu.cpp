@@ -4,6 +4,9 @@
 Menu::Menu(sf::RenderWindow& window) {
 	if (!menuBackground.loadFromFile("images/menuBackground.png"))
 		std::cout << "Error loading background\n";
+	else {
+		printf("background loaded");
+	}
 	sprite.setTexture(menuBackground);
 	bgColor = sf::Color::Black;
 	menuArrowJump = 58;
